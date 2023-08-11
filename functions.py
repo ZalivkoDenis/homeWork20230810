@@ -3,11 +3,12 @@
 https://pythonist.ru/bystraya-sortirovka-na-python/
 """
 
+
 def input_int(message: str) -> int:
     while True:
         try:
             return int(input(message))
-        except ValueError as ve:
+        except ValueError:
             print('Ошибка! Необходимо ввести целое число!')
 
 
@@ -20,5 +21,5 @@ def input_float(message: str) -> any([int, float]):
                 res = int(user_input)
             finally:
                 return res
-        except ValueError as ve:
-            print('RAISE!!! Ошибка! Необходимо ввести число!')
+        except ValueError:
+            print('Ошибка! Необходимо ввести число!')

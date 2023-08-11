@@ -13,9 +13,9 @@ def partition(alist: list[any([int, float])], start: int, end: int) -> int:
 
     while True:
         while i <= j and alist[i] <= pivot:
-            i = i + 1
+            i += 1
         while i <= j and alist[j] >= pivot:
-            j = j - 1
+            j -= 1
 
         if i <= j:
             alist[i], alist[j] = alist[j], alist[i]

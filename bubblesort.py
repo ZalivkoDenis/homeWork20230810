@@ -1,3 +1,9 @@
+"""
+Информация получена:
+https://younglinux.info/algorithm/bubble
+"""
+
+
 def bubblesort(alist: list[any([int, float])]):
     n = len(alist)
     for i in range(n-1):
