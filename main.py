@@ -10,6 +10,7 @@
 """
 from functions import *
 from quicksort import quicksort
+from bubblesort import bubblesort
 
 count_items = input_int('Введите количество элементов: ')
 
@@ -22,5 +23,9 @@ for _ in range(count_items):
 print('-'*20)
 
 print('Unsorted list:\t\t', alist)
+blist = list(alist)
 quicksort(alist, 0, len(alist))
-print('Sorted list:\t\t', alist)
+bubblesort(blist)
+print('Sorted list (quicksort):\t\t', alist)
+print('Sorted list (bubblesort):\t\t', blist)
+
